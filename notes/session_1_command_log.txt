@@ -1,0 +1,832 @@
+➜  ~ ls
+Desktop   Downloads Movies    Pictures  dev
+Documents Library   Music     Public    notes
+➜  ~ mkdir secondaryDev
+➜  ~ cd secondaryDev
+➜  secondaryDev mkdir imaginationSquares
+➜  secondaryDev cd imaginationSquares
+➜  imaginationSquares ls
+➜  imaginationSquares touch index.html
+➜  imaginationSquares open index.html
+➜  imaginationSquares npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (imaginationsquares)
+version: (1.0.0)
+description: Provide an easy way to draw maps on a grid for imaginary worlds.
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author: Adrian P. Dunston
+license: (ISC) MIT
+About to write to /Users/bitcapulet/secondaryDev/imaginationSquares/package.json:
+
+{
+  "name": "imaginationsquares",
+  "version": "1.0.0",
+  "description": "Provide an easy way to draw maps on a grid for imaginary worlds.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian P. Dunston",
+  "license": "MIT"
+}
+
+
+Is this OK? (yes)
+
+
+   ╭────────────────────────────────────────────────────────────────╮
+   │                                                                │
+   │      New patch version of npm available! 6.14.4 → 6.14.8       │
+   │   Changelog: https://github.com/npm/cli/releases/tag/v6.14.8   │
+   │               Run npm install -g npm to update!                │
+   │                                                                │
+   ╰────────────────────────────────────────────────────────────────╯
+
+➜  imaginationSquares ls
+README.md    drawing.js   index.html   index.js     package.json
+➜  imaginationSquares npm add http-server
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN imaginationsquares@1.0.0 No repository field.
+
++ http-server@0.12.3
+added 23 packages from 35 contributors and audited 23 packages in 1.456s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+➜  imaginationSquares h
+HISTCHARS                       hdiutil
+HISTFILE                        hdxml2manxml
+HISTSIZE                        head
+HOME                            headerdoc2html
+HOST                            heap
+h2ph                            heap32
+h2ph5.18                        helpviewer
+h2xs                            heroku
+h2xs5.18                        hexdump
+h52gif                          hg_prompt_info
+h5c++                           hidutil
+h5cc                            histchars
+h5clear                         history
+h5copy                          historywords
+h5debug                         hiutil
+h5diff                          host
+h5dump                          hostid
+h5fc                            hostinfo
+h5format_convert                hostname
+h5import                        hotspot.d
+h5jam                           hpftodit
+h5ls                            hpmdiagnose
+h5mkgrp                         hs
+h5perf_serial                   htcacheclean
+h5redeploy                      htdbm
+h5repack                        htdigest
+h5repart                        htmltree
+h5stat                          htmltree5.18
+h5unjam                         htpasswd
+h5watch                         http-server
+halt                            httpd
+handle_completion_insecurities  httpd-wrapper
+hash                            httpserv
+hdid                            httxt2dbm
+hdik                            hyperkit
+➜  imaginationSquares http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8081
+  http://192.168.86.27:8081
+Hit CTRL-C to stop the server
+[2020-08-18T01:24:12.395Z]  "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:78.0) Gecko/20100101 Firefox/78.0"
+(node:55374) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2020-08-18T01:24:12.460Z]  "GET /index.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:78.0) Gecko/20100101 Firefox/78.0"
+[2020-08-18T01:24:12.502Z]  "GET /drawing.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:78.0) Gecko/20100101 Firefox/78.0"
+[2020-08-18T01:24:12.518Z]  "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:78.0) Gecko/20100101 Firefox/78.0"
+[2020-08-18T01:24:12.519Z]  "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  imaginationSquares
+➜  imaginationSquares npm install --save-dev mocha
+npm WARN deprecated flat@4.1.0: Fixed a prototype pollution security issue in 4.1.0, please upgrade to ^4.1.1 or ^5.0.1.
+npm WARN imaginationsquares@1.0.0 No repository field.
+
++ mocha@8.1.1
+added 128 packages from 61 contributors and audited 151 packages in 5.136s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+➜  imaginationSquares ./node_modules/mocha/bin/mocha
+
+SyntaxError: Error parsing /Users/bitcapulet/secondaryDev/imaginationSquares/package.json: Unexpected token } in JSON at position 400
+    at parse (<anonymous>)
+    at readPackage (internal/modules/cjs/loader.js:263:20)
+    at readPackageScope (internal/modules/cjs/loader.js:288:19)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1187:17)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+➜  imaginationSquares ./node_modules/mocha/bin/mocha
+
+
+  View
+    draw
+      ✓ should not throw an exception
+
+
+  1 passing (5ms)
+
+➜  imaginationSquares npm install --save-dev sinon
+npm WARN imaginationsquares@1.0.0 No repository field.
+
++ sinon@9.0.3
+added 12 packages from 380 contributors and audited 163 packages in 1.562s
+
+25 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+➜  imaginationSquares ./node_modules/mocha/bin/mocha
+
+/Users/bitcapulet/secondaryDev/imaginationSquares/test/viewTest.js:25
+        getContext: sinon.fake.returns(ctx);
+                                           ^
+
+SyntaxError: Unexpected token ';'
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1106:15)
+    at Module._compile (internal/modules/cjs/loader.js:1140:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+➜  imaginationSquares ./node_modules/mocha/bin/mocha
+
+/Users/bitcapulet/secondaryDev/imaginationSquares/test/viewTest.js:31
+      assert canvas.getContext.calledWith("2d");
+             ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1106:15)
+    at Module._compile (internal/modules/cjs/loader.js:1140:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+➜  imaginationSquares ./node_modules/mocha/bin/mocha
+
+/Users/bitcapulet/secondaryDev/imaginationSquares/view.js:1
+export class View {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1106:15)
+    at Module._compile (internal/modules/cjs/loader.js:1140:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/Users/bitcapulet/secondaryDev/imaginationSquares/test/viewTest.js:3:18)
+    at Module._compile (internal/modules/cjs/loader.js:1176:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+➜  imaginationSquares ./node_modules/mocha/bin/mocha
+
+/Users/bitcapulet/secondaryDev/imaginationSquares/test/viewTest.js:3
+import {View} from "../view.js";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1106:15)
+    at Module._compile (internal/modules/cjs/loader.js:1140:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+➜  imaginationSquares ./node_modules/mocha/bin/mocha
+
+/Users/bitcapulet/secondaryDev/imaginationSquares/view.js:1
+export class View {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1106:15)
+    at Module._compile (internal/modules/cjs/loader.js:1140:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/Users/bitcapulet/secondaryDev/imaginationSquares/test/viewTest.js:3:18)
+    at Module._compile (internal/modules/cjs/loader.js:1176:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+➜  imaginationSquares mkdir dist
+➜  imaginationSquares npm install --save-dev @babel/core @babel/cli
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+
+> fsevents@1.2.13 install /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/@babel/cli/node_modules/fsevents
+> node install.js
+
+  SOLINK_MODULE(target) Release/.node
+  CXX(target) Release/obj.target/fse/fsevents.o
+  SOLINK_MODULE(target) Release/fse.node
+npm WARN imaginationsquares@1.0.0 No repository field.
+
++ @babel/cli@7.10.5
++ @babel/core@7.11.1
+added 188 packages from 121 contributors and audited 351 packages in 9.143s
+
+27 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+➜  imaginationSquares npm build
+npm WARN build `npm build` called with no arguments. Did you mean to `npm run-script build`?
+➜  imaginationSquares npm run-script build
+
+> imaginationsquares@1.0.0 build /Users/bitcapulet/secondaryDev/imaginationSquares
+> babel src -d dist
+
+babel:
+  src does not exist
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! imaginationsquares@1.0.0 build: `babel src -d dist`
+npm ERR! Exit status 2
+npm ERR!
+npm ERR! Failed at the imaginationsquares@1.0.0 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/bitcapulet/.npm/_logs/2020-08-18T01_48_10_047Z-debug.log
+➜  imaginationSquares mkdir src
+➜  imaginationSquares mv *.js src
+➜  imaginationSquares npm run-script build
+
+> imaginationsquares@1.0.0 build /Users/bitcapulet/secondaryDev/imaginationSquares
+> babel src -d dist
+
+Successfully compiled 3 files with Babel (301ms).
+➜  imaginationSquares npm run-script test
+
+> imaginationsquares@1.0.0 test /Users/bitcapulet/secondaryDev/imaginationSquares
+> ./node_modules/mocha/bin/mocha
+
+
+/Users/bitcapulet/secondaryDev/imaginationSquares/src/view.js:1
+export class View {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1106:15)
+    at Module._compile (internal/modules/cjs/loader.js:1140:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/Users/bitcapulet/secondaryDev/imaginationSquares/test/viewTest.js:3:18)
+    at Module._compile (internal/modules/cjs/loader.js:1176:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! imaginationsquares@1.0.0 test: `./node_modules/mocha/bin/mocha`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the imaginationsquares@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/bitcapulet/.npm/_logs/2020-08-18T01_49_02_286Z-debug.log
+➜  imaginationSquares npm run-script test
+
+> imaginationsquares@1.0.0 test /Users/bitcapulet/secondaryDev/imaginationSquares
+> ./node_modules/mocha/bin/mocha
+
+
+/Users/bitcapulet/secondaryDev/imaginationSquares/dist/view.js:1
+export class View {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1106:15)
+    at Module._compile (internal/modules/cjs/loader.js:1140:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/Users/bitcapulet/secondaryDev/imaginationSquares/test/viewTest.js:3:18)
+    at Module._compile (internal/modules/cjs/loader.js:1176:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! imaginationsquares@1.0.0 test: `./node_modules/mocha/bin/mocha`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the imaginationsquares@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/bitcapulet/.npm/_logs/2020-08-18T01_49_12_444Z-debug.log
+➜  imaginationSquares npm install --save-dev @babel/preset-env
+npm WARN imaginationsquares@1.0.0 No repository field.
+
++ @babel/preset-env@7.11.0
+added 99 packages from 17 contributors and audited 450 packages in 4.827s
+
+29 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+➜  imaginationSquares npm run-script test
+
+> imaginationsquares@1.0.0 test /Users/bitcapulet/secondaryDev/imaginationSquares
+> ./node_modules/mocha/bin/mocha
+
+
+/Users/bitcapulet/secondaryDev/imaginationSquares/dist/view.js:1
+export class View {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1106:15)
+    at Module._compile (internal/modules/cjs/loader.js:1140:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/Users/bitcapulet/secondaryDev/imaginationSquares/test/viewTest.js:3:18)
+    at Module._compile (internal/modules/cjs/loader.js:1176:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! imaginationsquares@1.0.0 test: `./node_modules/mocha/bin/mocha`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the imaginationsquares@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/bitcapulet/.npm/_logs/2020-08-18T01_49_53_425Z-debug.log
+➜  imaginationSquares npm run-script build
+
+> imaginationsquares@1.0.0 build /Users/bitcapulet/secondaryDev/imaginationSquares
+> babel src -d dist
+
+Successfully compiled 3 files with Babel (336ms).
+➜  imaginationSquares npm run-script test
+
+> imaginationsquares@1.0.0 test /Users/bitcapulet/secondaryDev/imaginationSquares
+> ./node_modules/mocha/bin/mocha
+
+
+/Users/bitcapulet/secondaryDev/imaginationSquares/dist/view.js:1
+export class View {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1106:15)
+    at Module._compile (internal/modules/cjs/loader.js:1140:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/Users/bitcapulet/secondaryDev/imaginationSquares/test/viewTest.js:3:18)
+    at Module._compile (internal/modules/cjs/loader.js:1176:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! imaginationsquares@1.0.0 test: `./node_modules/mocha/bin/mocha`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the imaginationsquares@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/bitcapulet/.npm/_logs/2020-08-18T01_49_59_182Z-debug.log
+➜  imaginationSquares cat dist/view.js
+export class View {
+  constructor(canvas) {
+    this.canvas = canvas;
+  }
+
+  draw() {
+    console.log("I drew!");
+  }
+
+}%                                                                                                                                                                            ➜  imaginationSquares echo '{
+  "presets": ["@babel/preset-env"]
+}
+' > .babelrc
+➜  imaginationSquares cat .babelrc
+{
+  "presets": ["@babel/preset-env"]
+}
+
+➜  imaginationSquares npm run-script build
+
+> imaginationsquares@1.0.0 build /Users/bitcapulet/secondaryDev/imaginationSquares
+> babel src -d dist
+
+Successfully compiled 3 files with Babel (453ms).
+➜  imaginationSquares cat dist/view.js
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.View = void 0;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var View = /*#__PURE__*/function () {
+  function View(canvas) {
+    _classCallCheck(this, View);
+
+    this.canvas = canvas;
+  }
+
+  _createClass(View, [{
+    key: "draw",
+    value: function draw() {
+      console.log("I drew!");
+    }
+  }]);
+
+  return View;
+}();
+
+exports.View = View;%                                                                                                                                                         ➜  imaginationSquares npm run-script test
+
+> imaginationsquares@1.0.0 test /Users/bitcapulet/secondaryDev/imaginationSquares
+> ./node_modules/mocha/bin/mocha
+
+
+
+  View
+    draw
+      ✓ should not throw an exception
+I drew!
+      1) should draw a line
+
+
+  1 passing (20ms)
+  1 failing
+
+  1) View
+       draw
+         should draw a line:
+
+      AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(canvas.getContext.calledWith("2d"))
+
+      + expected - actual
+
+      -false
+      +true
+
+      at Context.<anonymous> (test/viewTest.js:31:7)
+      at processImmediate (internal/timers.js:456:21)
+
+
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! imaginationsquares@1.0.0 test: `./node_modules/mocha/bin/mocha`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the imaginationsquares@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/bitcapulet/.npm/_logs/2020-08-18T01_50_56_883Z-debug.log
+➜  imaginationSquares npm run-script test
+
+> imaginationsquares@1.0.0 test /Users/bitcapulet/secondaryDev/imaginationSquares
+> ./node_modules/mocha/bin/mocha
+
+
+
+  View
+    draw
+      ✓ should not throw an exception
+I drew!
+      1) should draw a line
+
+
+  1 passing (15ms)
+  1 failing
+
+  1) View
+       draw
+         should draw a line:
+
+      AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(canvas.getContext.calledWith("2d"))
+
+      + expected - actual
+
+      -false
+      +true
+
+      at Context.<anonymous> (test/viewTest.js:31:7)
+      at processImmediate (internal/timers.js:456:21)
+
+
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! imaginationsquares@1.0.0 test: `./node_modules/mocha/bin/mocha`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the imaginationsquares@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/bitcapulet/.npm/_logs/2020-08-18T01_51_57_934Z-debug.log
+➜  imaginationSquares npm run-script build && npm run-script test
+
+> imaginationsquares@1.0.0 build /Users/bitcapulet/secondaryDev/imaginationSquares
+> babel src -d dist
+
+Successfully compiled 3 files with Babel (378ms).
+
+> imaginationsquares@1.0.0 test /Users/bitcapulet/secondaryDev/imaginationSquares
+> ./node_modules/mocha/bin/mocha
+
+
+
+  View
+    draw
+      ✓ should not throw an exception
+      1) should draw a line
+
+
+  1 passing (5ms)
+  1 failing
+
+  1) View
+       draw
+         should draw a line:
+     ReferenceError: ctx is not defined
+      at View.draw (dist/view.js:25:7)
+      at Context.<anonymous> (test/viewTest.js:29:12)
+      at processImmediate (internal/timers.js:456:21)
+
+
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! imaginationsquares@1.0.0 test: `./node_modules/mocha/bin/mocha`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the imaginationsquares@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/bitcapulet/.npm/_logs/2020-08-18T01_52_20_063Z-debug.log
+➜  imaginationSquares npm run-script build && npm run-script test
+
+> imaginationsquares@1.0.0 build /Users/bitcapulet/secondaryDev/imaginationSquares
+> babel src -d dist
+
+Successfully compiled 3 files with Babel (375ms).
+
+> imaginationsquares@1.0.0 test /Users/bitcapulet/secondaryDev/imaginationSquares
+> ./node_modules/mocha/bin/mocha
+
+
+
+  View
+    draw
+      ✓ should not throw an exception
+      1) should draw a line
+
+
+  1 passing (7ms)
+  1 failing
+
+  1) View
+       draw
+         should draw a line:
+     TypeError: ctx.beginPath.called is not a function
+      at Context.<anonymous> (test/viewTest.js:32:28)
+      at processImmediate (internal/timers.js:456:21)
+
+
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! imaginationsquares@1.0.0 test: `./node_modules/mocha/bin/mocha`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the imaginationsquares@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/bitcapulet/.npm/_logs/2020-08-18T01_52_33_944Z-debug.log
+➜  imaginationSquares npm run-script build && npm run-script test
+
+> imaginationsquares@1.0.0 build /Users/bitcapulet/secondaryDev/imaginationSquares
+> babel src -d dist
+
+Successfully compiled 3 files with Babel (382ms).
+
+> imaginationsquares@1.0.0 test /Users/bitcapulet/secondaryDev/imaginationSquares
+> ./node_modules/mocha/bin/mocha
+
+
+/Users/bitcapulet/secondaryDev/imaginationSquares/test/viewTest.js:32
+      assert(ctx.beginPath.called;
+                           ^^^^^^
+
+SyntaxError: missing ) after argument list
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1106:15)
+    at Module._compile (internal/modules/cjs/loader.js:1140:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1196:10)
+    at Module.load (internal/modules/cjs/loader.js:1040:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:929:14)
+    at Module.require (internal/modules/cjs/loader.js:1080:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/mocha.js:427:19)
+    at singleRun (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:156:15)
+    at exports.runMocha (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run-helpers.js:225:10)
+    at Object.exports.handler (/Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/mocha/lib/cli/run.js:366:11)
+    at /Users/bitcapulet/secondaryDev/imaginationSquares/node_modules/yargs/lib/command.js:241:49
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! imaginationsquares@1.0.0 test: `./node_modules/mocha/bin/mocha`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the imaginationsquares@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/bitcapulet/.npm/_logs/2020-08-18T01_52_49_364Z-debug.log
+➜  imaginationSquares npm run-script build && npm run-script test
+
+> imaginationsquares@1.0.0 build /Users/bitcapulet/secondaryDev/imaginationSquares
+> babel src -d dist
+
+Successfully compiled 3 files with Babel (374ms).
+
+> imaginationsquares@1.0.0 test /Users/bitcapulet/secondaryDev/imaginationSquares
+> ./node_modules/mocha/bin/mocha
+
+
+
+  View
+    draw
+      ✓ should not throw an exception
+      ✓ should draw a line
+
+
+  2 passing (5ms)
+
+➜  imaginationSquares g init
+Initialized empty Git repository in /Users/bitcapulet/secondaryDev/imaginationSquares/.git/
+➜  imaginationSquares git:(master) ✗ g add .
+➜  imaginationSquares git:(master) ✗ g reset
+➜  imaginationSquares git:(master) ✗ mkdir notes
+➜  imaginationSquares git:(master) ✗ touch session_1_command_log.txt
+➜  imaginationSquares git:(master) ✗ mv session_1_command_log.txt notes
+➜  imaginationSquares git:(master) ✗

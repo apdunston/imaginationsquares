@@ -1,0 +1,22 @@
+{
+  "name": "imaginationsquares",
+  "version": "1.0.0",
+  "description": "Provide an easy way to draw maps on a grid for imaginary worlds.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "Adrian P. Dunston",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "mocha": "^8.1.1",
+    "sinon": "^9.0.3"
+  }
+}
